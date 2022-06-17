@@ -19,7 +19,7 @@ const PlayerControls = ({SkipSong, setIsPlaying, isPlaying}) => {
       >
         <FontAwesomeIcon icon={isPlaying ? faPause : faPlay} />
       </button>
-      <button className="skip-btn" onClick={() => SkipSong()}>
+      <button className="skip-btn" onClick={() => SkipSong(true)}>
         <FontAwesomeIcon icon={faForward} />
       </button>
     </div>

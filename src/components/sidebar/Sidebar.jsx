@@ -16,6 +16,9 @@ const Sidebar = ({navbarStatus}) => {
                 <div className="sidebar-close" onClick={() => handleNavbar()}>
                     {activeSidebar ? <img style={{transform: "rotateY(180deg)"}} src={ForwardIcon} alt="" /> : <img src={ForwardIcon} alt="" />}
                 </div>
+                <div className="library" style={{opacity: activeSidebar ? 1 : 0, visibility: activeSidebar ? "visible" : 'hidden'}}>
+                    <h3>Library</h3>
+                </div>
             </div>
         </>
 
